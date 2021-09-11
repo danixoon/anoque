@@ -1,0 +1,30 @@
+{
+  "name": "anoque",
+  "version": "0.0.1",
+  "description": "question-based chat bot",
+  "main": "build/index.js",
+  "repository": "https://github.com/danixoon/anoque.git",
+  "author": "Daniil Bombenkov <danixoon@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn ts-node ./src/index.ts"
+  },
+  "nodemonConfig": {
+    "exec": "yarn dev",
+    "ext": "ts",
+    "ignore": [
+      "node_modules"
+    ],
+    "delay": 2500
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "@types/node": "^16.9.1",
+    "dotenv": "^10.0.0",
+    "vk-io": "^4.4.0"
+  }
+}
